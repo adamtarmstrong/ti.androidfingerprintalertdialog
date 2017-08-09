@@ -5,6 +5,8 @@ Titanium - Android Fingerprint AlertDialog Alloy Widget
 
 https://material.io/guidelines/patterns/fingerprint.html#fingerprint-behavior
 
+![Alt text](/android_fingerprint_states.png)
+
 
 ### index.js
 ```
