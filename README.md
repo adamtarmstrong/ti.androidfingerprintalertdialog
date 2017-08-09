@@ -9,7 +9,7 @@ https://material.io/guidelines/patterns/fingerprint.html#fingerprint-behavior
 
 
 ### index.js
-```
+```javascript
 if (OS_ANDROID) {
 	/*
 	 * Include Android reprint library methods
