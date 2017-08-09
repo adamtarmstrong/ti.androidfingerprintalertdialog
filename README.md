@@ -1,6 +1,10 @@
 # ti.androidfingerprintalertdialog
 Titanium - Android Fingerprint AlertDialog Alloy Widget
 
+### This widget is using the Reprint Hyperloop module provided, free, from LoopModules.com.  But any other authentication method could be used.  The purpose of this widget is to simply apply all the Material Style Guides for presenting a UI to request fingerprint authentication, failure, and success into a widget that could be added to any Titanium project.
+
+https://material.io/guidelines/patterns/fingerprint.html#fingerprint-behavior
+
 
 ### index.js
 ```
