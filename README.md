@@ -8,6 +8,17 @@ https://material.io/guidelines/patterns/fingerprint.html#fingerprint-behavior
 ![Alt text](/android_fingerprint_states.png)
 
 
+### index.xml
+```javascript
+<Alloy>
+	<Window class="container">
+		<Label id="label" text="Android Fingerprint AlertDialog Example" />
+		
+		<Widget id="androidFingerprint" src="ti.androidfingerprintalertdialog" />
+	</Window>
+</Alloy>
+```
+
 ### index.js
 ```javascript
 if (OS_ANDROID) {
@@ -64,4 +75,11 @@ if (OS_ANDROID) {
 	}
 }
 ```
-	
+
+### config.json
+```javascript
+"dependencies": {
+        "ti.androidfingerprintalertdialog": "1.0"
+    }
+```
+
