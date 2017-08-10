@@ -77,10 +77,8 @@ function postLayout(){
 					 * Show Alert Dialog and set callbacks for click events 'Use Password' & 'Cancel'
 					 * Add Reprint listener for fingerprint authentication
 					 */
-					setTimeout(function() {
-						$.androidFingerprint.show(fingerprintUsePassword, fingerprintCancel);
-						Reprint.authenticate(successCallback, failureCallback);
-					}, 300);
+					Reprint.authenticate(successCallback, failureCallback);
+					$.androidFingerprint.show(fingerprintUsePassword, fingerprintCancel);
 					
 					/*
 					 * Define success | failure | UsePassword | Cancel
@@ -91,14 +89,11 @@ function postLayout(){
 					}
 					function failureCallback(failureReason, fatal, errorMessage, moduleTag, errorCode) {
 						$.androidFingerprint.failure();
-						//alert(errorMessage);
 					}
 					function fingerprintUsePassword(){
-						//alert("User Pressed - Use Password");
 						Reprint.cancelAuthentication();
 					}
 					function fingerprintCancel(){
-						//alert("User Pressed - Cancel");
 						Reprint.cancelAuthentication();
 					}
 			}
