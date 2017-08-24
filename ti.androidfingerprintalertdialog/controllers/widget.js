@@ -3,9 +3,16 @@ var usePasswordCallback, cancelCallback;
 $.fingerprintIcon.image = WPATH("android_fingerprint.png");
 
 function show(UsePasswordCB,CancelCB){
+    $.fingerprintIcon.image = WPATH("android_fingerprint.png");
+	$.fingerprintLabel.color = "#cccccc";
+	$.fingerprintLabel.text = "Touch sensor";
 	$.alertDialog.show();
 	usePasswordCallback = UsePasswordCB || {};
 	cancelCallback = CancelCB || {};
+};
+
+function hide(){
+	$.alertDialog.hide();
 };
 
 function success(){
@@ -31,6 +38,7 @@ function fingerprintButtonPressed(e){
 	}
 };
 exports.show = show;
+exports.hide = hide;
 exports.success = success;
 exports.failure = failure;
 exports.fingerprintButtonPressed = fingerprintButtonPressed;
