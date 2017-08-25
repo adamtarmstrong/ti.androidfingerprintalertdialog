@@ -1,3 +1,7 @@
+[!["Titanium"](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/)
+[!["Alloy"](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/)
+[!["License"](http://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://choosealicense.com/licenses/apache-2.0/)
+
 # ti.androidfingerprintalertdialog
 Titanium Alloy Widget - Android Fingerprint AlertDialog
 
@@ -5,7 +9,7 @@ The purpose of this widget is to simply apply all the Material Style Guidelines 
 https://material.io/guidelines/patterns/fingerprint.html#fingerprint-behavior
 
 
-![Alt text](/android_fingerprint_states.png)
+![Alt text](android_fingerprint_states.png)
 
 
 ### 'Requirement'
@@ -36,7 +40,7 @@ $.androidFingerprint.success();
 ```javascript
 $.androidFingerprint.failure();
 ```
-	
+
 
 
 ### Example
@@ -45,7 +49,7 @@ $.androidFingerprint.failure();
 <Alloy>
 	<Window class="container">
 		<Label id="label" text="Android Fingerprint AlertDialog Example" />
-		
+
 		<Widget id="androidFingerprint" src="ti.androidfingerprintalertdialog" />
 	</Window>
 </Alloy>
@@ -60,7 +64,7 @@ if (OS_ANDROID) {
 	var Reprint = require('reprint');
 	Reprint.initialize();
 }
-					
+
 function postLayout(){
 	if (OS_ANDROID) {
 			/*
@@ -79,7 +83,7 @@ function postLayout(){
 					 */
 					Reprint.authenticate(successCallback, failureCallback);
 					$.androidFingerprint.show(fingerprintUsePassword, fingerprintCancel);
-					
+
 					/*
 					 * Define success | failure | UsePassword | Cancel
 					 */
@@ -109,4 +113,3 @@ $.index.open();
         "ti.androidfingerprintalertdialog": "1.0"
     }
 ```
-
